@@ -1,0 +1,35 @@
+body {
+    background-color: blueviolet;
+}
+
+h1 {
+    color: brown;
+    font-size: 70px;
+    text-align: center;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+p {
+    color: blanchedalmond;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#texto2{
+    color:#FFC0CB;
+    font-size: 30px;
+    text-align: left;
+    font-family:godofwar;
+}
+
+img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@font-face{
+    font-family:godofwar;
+    src: url("GODOFWAR.TTF");
+}
