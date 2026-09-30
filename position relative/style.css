@@ -1,0 +1,27 @@
+main {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 2px auto;
+  border: 2px solid #000;
+}
+
+#camada1 {
+  position: relative;
+  width: 20%;
+  height: 150px;
+  background-color: #89cff0;
+  color: aliceblue;
+  text-align: center;
+  float: left;
+}
+
+#camada2 {
+  position: relative;
+  width: 80%;
+  height: 150px;
+  background-color: #ff7f7f;
+  color: aliceblue;
+  text-align: center;
+  float: left;
+}
