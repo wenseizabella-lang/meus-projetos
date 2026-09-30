@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>agendamento de consulta</title>
+    <link rel="stylesheet" href="/css.style/style.css" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>ficha técnica do paciente</legend>
+        <label for="nome">nome do paciente:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="digite seu nome"
+        />
+        <br />
+        <label for="date">data da consulta:</label>
+        <input type="date" />
+        <br />
+        <label for="">especialidades médicas:</label>
+        <select name="especialidades" id="especialidades">
+          <option value="">escolha:</option>
+
+          <optgroup label="areas">
+            <option value="clinica geral">clinica geral</option>
+            <option value="cardiologia">cardiologia</option>
+            <option value="dermatologia">dermatologia</option>
+            <option value="pediatria">pediatria</option>
+          </optgroup>
+        </select>
+        <br />
+        <label for="">planos de saude:</label>
+        <select name="planos de saude:" id="planos saude:">
+          <option value="">escolha:</option>
+
+          <optgroup label="opções">
+            <option value="particular">particular</option>
+            <option value="unimed">unimed</option>
+            <option value="amil">amil</option>
+            <option value="bradesco saude">bradesco saude</option>
+          </optgroup>
+        </select>
+        <br />
+        <label for="pc">primeira consulta na clinica:</label>
+        <input type="radio" name="pc" id="pc" /> sim
+        <input type="radio" name="pc" id="pc" /> não
+        <br />
+        <label for="acess">necessidade de acessibilidade no local:</label>
+        <br />
+        <input type="checkbox" name="rampa" id="rampa" /> rampa de acesso
+        <input
+          type="checkbox"
+          name="intérprete de libras"
+          id="intérprete de libras"
+        />
+        intérprete de libras
+        <input
+          type="checkbox"
+          name="espaço para cães guias"
+          id="espaço para cães guias"
+        />
+        espaço para cães guias
+        <br />
+        <label for="guia">guia médica ou encaminhamento</label>
+        <input type="file" name="guia" id="guia" />
+        <br />
+        <p>
+          <input type="submit" value="enviar" />
+          <input type="reset" value="limpar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
