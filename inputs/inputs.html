@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario revisão</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+          <label for="nome"> nome:</label>
+          <input type="text" name="nome" id="nome"  placeholder="digite seu nome"/>
+          <br />
+          <label for="email:"> email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            required
+            minlength="4"
+            maxlength="10"
+            placeholder=" digite seu email"
+          />
+          <br />
+          <label for="sua idade:">sua idade:</label>
+          <input
+            type="number"
+            name="sua idade:"
+            id="sua idade:"
+            required
+            min="0"
+            max="100"
+          />
+          <br />
+          <label for="senha:">senha:</label>
+          <input
+            type="password"
+            name="senha:"
+            id="senha:"
+            required
+            minlength="8"
+            maxlength="10"
+            placeholder="digite sua senha"
+          />
+          <br />
+          <label for="contap"> conta pessoal</label>
+          <input type="radio" name="conta" id="contap"> sim
+          <br>
+          <label for="contaj">conta juridica</label>
+          <input type="radio" name="conta" id="contaj"> não
+<br>
+          <label for="aceite os termos"> aceite os termos</label>
+          <fieldset>
+            <input type="checkbox" name="aceite os termos" id="aceite os termos" />
+          
+          <p>
+            <input type="submit" value="enviar" />
+            <input type="reset" value="limpar" />
+          </p>
+      </fieldset>
+      <legend> dados pessoais</legend>
+    </form>
+  </body>
+</html>
