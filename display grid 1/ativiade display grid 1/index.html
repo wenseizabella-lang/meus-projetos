@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displai gri I</title>
+    
+</head>
+<body>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: "Times New Roman", serif;
+        }
+
+    
+        .container {
+            width: 90%;
+            height: 85vh;
+            margin: 35px auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 140px 70px 1fr 70px;
+
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "esquerdo direito"
+                "footer footer";
+
+            border: 3px solid black;
+        }
+
+        
+        .header {
+            grid-area: header;
+            background-color: #ffb3b3;
+            text-align: center;
+        }
+
+        
+        .nav {
+            grid-area: nav;
+            background-color: #E0FFFF;
+        }
+
+        
+        .esquerdo {
+            grid-area: esquerdo;
+            background-color: #BFE8C5;
+        }
+
+    
+        .direito {
+            grid-area: direito;
+            background-color: #FFFACD;
+        }
+
+        
+        .footer {
+            grid-area: footer;
+            background-color: gray;
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                height: 90vh;
+                margin: 15px auto;
+
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 100px 60px 1fr 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            Cabeçalho da página
+        </header>
+
+        <nav class="nav">
+            Área de navegação de links
+        </nav>
+
+        <aside class="esquerdo">
+            Esquerdo
+        </aside>
+
+        <main class="direito">
+            Direito
+        </main>
+
+        <footer class="footer">
+            Rodapé da página
+        </footer>
+
+    </div>
+ 
+</body>
+</html>
